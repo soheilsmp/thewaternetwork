@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>شبکه متخصصین آب کشور</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+    <!-- plugins css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
+    <link rel="stylesheet" href="../bower_components/nvd3/build/nv.d3.min.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.default.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css" />
+
+
+    <!-- core css -->
+    <link href="assets/css/ei-icon.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link href="assets/fonts/IRANSans4/WebFonts/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="layout">
+          <!-- Side Nav START -->
+          <div class="side-nav">
+              <div class="side-nav-inner">
+                  <div class="side-nav-logo">
+                      <a href="index.html">
+                          <div class="logo logo-dark" style="background-image: url('')"></div>
+                          <div class="logo logo-white" style="background-image: url('')"></div>
+                      </a>
+                      <div class="mobile-toggle side-nav-toggle">
+                          <a href="">
+                              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <ul class="side-nav-menu scrollable">
+                      <li class="nav-item active">
+                          <a class=" " href="index.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-home"></i>
+                </span>
+                              <span class="title">صفحه اصلی</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="index.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-home"></i>
+                </span>
+                              <span class="title">اعلان ها</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="questions.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-question"></i>
+                </span>
+                              <span class="title">سوال</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="discussions.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-comments-o"></i>
+                </span>
+                              <span class="title">بحث</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="events.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-users"></i>
+                </span>
+                              <span class="title">رویداد ها</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="library.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-book fa-2x"></i>
+                </span>
+                              <span class="title">کتابخانه</span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="index.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-calendar"></i>
+                </span>
+                              <span class="title">کمیته های تخصصی </span>
+                          </a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class=" " href="index.html">
+                              <span class="icon-holder">
+                  <i class="fa fa-lg fa-home"></i>
+                </span>
+                              <span class="title">گروه های مادر</span>
+                          </a>
+                      </li>
+
+                  </ul>
+              </div>
+          </div>
+          <!-- Side Nav END -->
+
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar">
+                    <div class="header-container">
+                        <ul class="nav-left">
+                            <li>
+                                <a class="side-nav-toggle" href="javascript:void(0);">
+                                    <i class="ti-view-grid"></i>
+                                </a>
+                            </li>
+                            <li class="search-box">
+                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                                    <i class="search-icon ti-search pdd-right-10"></i>
+                                    <i class="search-icon-close ti-close pdd-right-10"></i>
+                                </a>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="جستجو...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+													<i class="ti-user pdd-right-5"></i>
+													<span>People</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Jordan Hurst</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>44 Shirley Ave. West Chicago</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Jennifer Watkins</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>514 S. Magnolia St. Orlando</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Michael Birch</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>70 Bowman St. South Windsor</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mrg-horizon-20 border top"></div>
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+													<i class="ti-rss pdd-right-5"></i>
+													<span>ارسال</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/img-1.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Artoo expresses his relief</span>
+                                                            <span class="sub-title">
+																	<span>Oh, thank goodness we're coming out...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/img-2.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Ready for some power?</span>
+                                                            <span class="sub-title">
+																	<span>Lord Vader. You may take Caption So...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-settings pdd-right-10"></i>
+                                            <span>Setting</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-email pdd-right-10"></i>
+                                            <span>Inbox</span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="side-panel-toggle text-white" href="javascript:void(0);">
+                                    <i class="ti-align-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header END -->
+
+                <!-- Side Panel START -->
+                <div class="side-panel">
+                    <div class="side-panel-wrapper bg-white">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#news" role="tab" data-toggle="tab">
+                                    <span>News</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#profile" role="tab" data-toggle="tab">
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#todo-list" role="tab" data-toggle="tab">
+                                    <span>Todo</span>
+                                </a>
+                            </li>
+                            <li class="panel-close">
+                                <a class="side-panel-toggle text-white" href="javascript:void(0);">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <!-- chat START -->
+                            <div id="news" role="tabpanel" class="tab-pane fade in active">
+                                <div class="chat">
+                                    <div class="chat-user-list scrollable" style="padding: 4px; padding-right: 7px;">
+                                        <ul class="list-info overflow-y-auto relative scrollable">
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">ارسال</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">ارسال</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">ارسال</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">ارسال</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">ارسال</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Samuel Field</span>
+                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-primary">
+															<span class="text-white">M</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Michael Birch</span>
+                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-success">
+														<span class="text-white"><i class="fa fa-paper-plane-o"></i></span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Message sent</span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-info">
+														<span class="text-white"><i class="ti-user"></i></span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+															<span class="font-size-14 text-semibold">Admin</span>
+                                                        <span class="text-gray">Welcome on board</span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- chat END -->
+                            <!-- profile START -->
+                            <div id="profile" role="tabpanel" class="tab-pane fade">
+                                <div class="profile scrollable">
+                                    <div class="pdd-horizon-10 pdd-top-10">
+                                        <div class="border bottom">
+                                            <div class="text-center mrg-top-20">
+                                                <div class="row">
+                                                    <div class="col-md-6 ml-auto mr-auto text-center">
+                                                        <img class="img-fluid border-radius-round" src="assets/images/avatars/user-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <h4 class="mrg-top-20">علی رفیعی</h4>
+                                                <span class="">برنامه نویس اندروید</span>
+                                            </div>
+                                            <div class="row text-center pdd-vertical-20">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-4 col-xs-4 border right">
+                                                            <div class="pdd-vertical-10">
+                                                                <span class="font-size-18 text-dark">18</span>
+                                                                <small>پروژه ها</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4 border right">
+                                                            <div class="pdd-vertical-10">
+                                                                <span class="font-size-18 text-dark">1,362</span>
+                                                                <small>Followers</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="pdd-vertical-10">
+                                                                <span class="font-size-18 text-dark">362</span>
+                                                                <small>Points</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pdd-horizon-20 pdd-top-20">
+                                        <div class="border bottom">
+                                            <h5 class="text-dark mrg-btm-20">Quick Tools</h5>
+                                            <ul class="list-unstyled list-link font-size-16 pdd-btm-20">
+                                                <li>
+                                                    <a href="">
+                                                        <i class="ti-user pdd-right-10"></i>
+                                                        <span>Friend Request</span>
+                                                        <span class="label label-info mrg-left-5">2</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="ti-book pdd-right-10"></i>
+                                                        <span>Inbox</span>
+                                                        <span class="label label-warning mrg-left-5">8</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="ti-settings pdd-right-10"></i>
+                                                        <span>Settings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="padding-20">
+                                        <h5 class="text-dark mrg-btm-20">Recent</h5>
+                                        <ul class="list-unstyled list-info">
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">Jordan Hurst</span>
+                                                        <span class="sub-title">have send you a request</span>
+                                                        <span class="float-object">8m</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">Samuel Field</span>
+                                                        <span class="sub-title">have send you a request</span>
+                                                        <span class="float-object">7d</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-info text-center font-size-25 font-secondary">
+															<span class="text-white">E</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">Espire</span>
+                                                        <span class="sub-title">Welcome on Board</span>
+                                                        <span class="float-object">7d</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- profile END -->
+                            <!-- todo START -->
+                            <div id="todo-list" role="tabpanel" class="tab-pane fade">
+                                <div class="todo-wrapper">
+                                    <div class="todo-category-wrapper">
+                                        <div class="row mrg-btm-15">
+                                            <div class="col-md-12">
+                                                <h3 class="no-mrg-top">Todo List</h3>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:void(0);" class="todo-toggle">
+                                            <div class="todo-category">
+                                                <span class="amount">8</span>
+                                                <span class="category">Today</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="todo-toggle">
+                                            <div class="todo-category">
+                                                <span class="amount">18</span>
+                                                <span class="category">This Week</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="todo-toggle">
+                                            <div class="todo-category">
+                                                <span class="amount">28</span>
+                                                <span class="category">This Month</span>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="todo-toggle">
+                                            <div class="create-category">
+                                                <i class="amount fa fa-plus-circle"></i>
+                                                <span class="category">New Category</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="todolist-wrapper">
+                                        <div class="todolist-header">
+                                            <a href="javascript:void(0);" class="back todo-toggle">
+                                                <i class="ti-arrow-circle-left"></i>
+                                            </a>
+                                            <h3 class="category">This Week</h3>
+                                            <a href="" class="add">
+                                                <span>ADD</span>
+                                            </a>
+                                        </div>
+                                        <div class="todolist-body">
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="task1" name="task1" type="checkbox">
+                                                <label for="task1">I hope the old man got that tractor </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="task2" name="task2" type="checkbox">
+                                                <label for="task2">Come on, come on!</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="task3" name="task3" type="checkbox">
+                                                <label for="task3">it was dangerous here</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="task4" name="task4" type="checkbox">
+                                                <label for="task4">I hope the old man got that tractor </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="task5" name="task5" type="checkbox">
+                                                <label for="task5">Artoo! Artoo, quickly!</label>
+                                            </div>
+                                        </div>
+                                        <div class="todolist-body">
+                                            <div class="pdd-btm-5 mrg-btm-15 border bottom">
+                                                <p class="mrg-btm-5">Completed</p>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="completed-1" name="completed-1" type="checkbox" checked="">
+                                                <label for="completed-1">I hope the old man got that tractor </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="completed-2" name="completed-2" type="checkbox" checked="">
+                                                <label for="completed-2">Come on, come on!</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <button class="delete">
+                                                    <i class="ti-close"></i>
+                                                </button>
+                                                <input id="completed-3" name="completed-3" type="checkbox" checked="">
+                                                <label for="completed-3">it was dangerous here</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side Panel END -->
+
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    <div class="container-fluid">
+
+                        <div class="social">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <div class="card">
+                                        <div class="card-header">
+                                            <ul class="list-unstyled list-inline text-right pdd-vertical-5">
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+
+                                                        <span>تکنولوژی</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <img class="profile-icon-img img-fluid" src="assets/images/user.jpg" alt="">
+                                                        <span>محمدرضا شفیعی</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-clock-o pdd-right-5"></i>
+                                                        <span>7 ساعت پیش</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-8 ml-auto">
+
+                                                        <div class="">
+                                                            <h2 class="mrg-btm-20">
+                                                              <i class="fa fa-download"></i>
+                                                              درمان آب آلوده به نفت در کشتی ها
+                                                            </h2>
+
+                                                            <div class="row">
+                                                              <div class="attached-file col-md-12">
+                                                                <div class="file-pic">
+                                                                  <img width="100%" height="100%" src="#" />
+                                                                </div>
+                                                                <div class="file-detail">
+                                                                  <p style="line-height: 9px; font-size: 10px">
+                                                                    <span>نام فایل:</span>
+                                                                    <span>Pakistan.pdf</pan>
+                                                                  </p>
+                                                                  <p style="line-height: 9px; font-size: 10px">
+                                                                    <span>سایز فایل:</span>
+                                                                    <span>100 کیلوبایت</pan>
+                                                                  </p>
+                                                                  <p style="line-height: 9px; font-size: 10px">
+                                                                    <span>نوع فایل:</span>
+                                                                    <span>PDF</pan>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <p>
+                                                                کدام تکنیک های درمان آب پس از آلودگی توسط محصولات نفتی در عروق با شما آشنا هستند؟ تجربه شما در استفاده از تکنولوژی چیست؟
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="image-container col-md-4">
+
+                                                        <div class="background-holder has-content" style="padding-right: 12px; border-right: 1px solid#E2E2E2">
+                                                           <span> برچسب ها: </span>
+                                                           <div class="labels">
+                                                               <i class="fa fa-tag" aria-hidden="true"></i>
+                                                               <span>دسته بندی شماره 1</span>
+                                                               <div class="sub-labels">
+                                                                    <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                    <span>زیردسته بندی شماره 1</span>
+                                                               </div>
+                                                           </div>
+                                                           <div class="labels">
+                                                                <i class="fa fa-tag" aria-hidden="true"></i>
+                                                                <span>دسته بندی شماره 1</span>
+                                                            </div>
+                                                            <div class="labels">
+                                                                <i class="fa fa-tag" aria-hidden="true"></i>
+                                                                <span>دسته بندی شماره 1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border top">
+                                            <ul class="list-unstyled list-inline text-right pdd-vertical-5">
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-eye" aria-hidden="true"></i>
+
+                                                        <span>168</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+
+                                                        <span>168</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                                        <span>18</span>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item mrg-left-10">
+                                                    <a href="">
+                                                        <i class="fa fa-podcast" aria-hidden="true"></i>
+                                                        <span>18</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                        <div class="social-feeds">
+                                            <div class="card widget-compose">
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <h4 class="card-title" style="float:right">13 پاسخ </h4>
+                                                      <div style="float:left;">
+                                                        <select id="selectize-dropdown">
+                                                            <option value="4">مرتب شده بر اساس تاریخ انتشار</option>
+                                                            <option value="1">مرتب سازی بر اساس محبوبیت</option>
+                                                            <option value="3">مرتب سازی بر اساس دنبال شده ها</option>
+                                                            <option value="5">مرتب سازی بر اساس نویسنده</option>
+                                                        </select>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div id="summernote-usage"></div>
+                                              <div class="text-right mrg-top-10">
+                                                  <button style="float: left" class="btn btn-info no-mrg-btm">ارسال</button>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card widget-feed">
+                                            <div class="feed-header">
+                                                <ul class="list-unstyled list-info">
+                                                    <li>
+                                                        <img class="thumb-img img-circle" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                        <div class="info">
+                                                            <a href="" class="title no-pdd-vertical text-semibold inline-block">علی رضایی</a>
+                                                            <span class="sub-title">
+																	<i class="fa fa-clock-o pdd-right-5"></i>
+																	<span>18 دقیقه پیش</span>
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="feed-body">
+                                                <p>
+
+
+
+لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.
+
+                                                </p>
+                                            </div>
+                                            <ul class="feed-action border bottom">
+
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+
+                                                        <span>168</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                                        <span>18</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <i class="fa fa-podcast" aria-hidden="true"></i>
+                                                        <span>18</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="feed-footer">
+                                                <div class="comment">
+                                                    <ul class="list-unstyled list-info">
+                                                        <li class="comment-item">
+                                                            <img class="thumb-img img-circle" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                            <div class="info">
+                                                                <a href="" class="title no-pdd-vertical text-semibold inline-block">Samuel Field</a>
+                                                                <span class="sub-title inline-block pull-right">
+																		<i class="fa fa-clock-o pdd-right-5"></i>
+																		<span>6 دقیقه پیش</span>
+                                                                </span>
+                                                                <p>فلانی، تو پدر منو چند سال پیش نجات دادی</p>
+                                                                <div class="comment-footer">
+                                                                    <div class="footer-item">
+                                                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                        <span>20</span>
+                                                                    </div>
+                                                                    <div class="footer-item">
+                                                                        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="comment-item">
+                                                            <img class="thumb-img img-circle" src="assets/images/avatars/thumb-6.jpg" alt="">
+                                                            <div class="info">
+                                                                <a href="" class="title no-pdd-vertical text-semibold inline-block">Michael Birch</a>
+                                                                <span class="sub-title inline-block pull-right">
+																		<i class="fa fa-clock-o pdd-right-5"></i>
+																		<span>3 دقیقه پیش</span>
+                                                                </span>
+                                                                <p>
+
+                                                                    سلام من میخواستم یه چیزی بگم
+
+                                                                </p>
+                                                                <div class="comment-footer">
+                                                                    <div class="footer-item">
+                                                                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                        <span>20</span>
+                                                                    </div>
+                                                                    <div class="footer-item">
+                                                                        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="add-comment">
+                                                        <textarea rows="1" class="form-control" placeholder="اضافه کردن نظر"></textarea>
+                                                        <div class="text-right mrg-top-10">
+                                                            <button style="float: left" class="btn btn-info no-mrg-btm">ارسال</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="floating-button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>-->
+                                    <section class="FAB">
+                                      <div class="FAB__action-button">
+                                        <i class="action-button__icon material-icons">add</i>
+                                        <p class="action-button__text--hide">Add Customer</p>
+                                      </div>
+                                      <div class="FAB__mini-action-button">
+                                        <div class="mini-action-button--hide mini-action-button">
+                                          <i class="mini-action-button__icon material-icons">assistant_photo</i>
+                                          <p class="mini-action-button__text--hide">Add Flag</p>
+                                        </div>
+                                        <div class="mini-action-button--hide mini-action-button">
+                                          <i class="mini-action-button__icon material-icons">audiotrack</i>
+                                          <p class="mini-action-button__text--hide">Add Song</p>
+                                        </div>
+                                        <div class="mini-action-button--hide mini-action-button">
+                                          <i class="mini-action-button__icon material-icons">videogame_asset</i>
+                                          <p class="mini-action-button__text--hide">Add Game</p>
+                                        </div>
+                                        <div class="mini-action-button--hide mini-action-button">
+                                          <i class="mini-action-button__icon material-icons">palette</i>
+                                          <p class="mini-action-button__text--hide">Add Art</p>
+                                        </div>
+                                      </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Wrapper END -->
+
+                <!-- Footer START -->
+                <footer class="content-footer">
+                    <div class="footer">
+                        <div class="copyright">
+                            <span class="go-right">.تمامی حقوق مادی و معنوی این وبسایت متعلق به وزارت نیرو می باشد</span>
+                            <span class="go-left">
+                                <a href="#"><i class="fa fa-telegram fa-2x mrg-right-15" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square fa-2x mrg-right-30" aria-hidden="true"></i></a>
+                                <a href="" class="text-gray mrg-left-15">درباره ما</a>
+                                <a href="" class="text-gray">تماس با ما</a>
+
+                            </span>
+                            <span class="go-left">
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer END -->
+
+            </div>
+            <!-- Page Container END -->
+
+        </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/PACE/pace.min.js"></script>
+    <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- endbuild -->
+
+    <!-- page plugins js -->
+    <script src="../bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/js/maps/jquery-jvectormap-us-aea.js"></script>
+    <script src="../bower_components/d3/d3.min.js"></script>
+    <script src="../bower_components/nvd3/build/nv.d3.min.js"></script>
+    <script src="../bower_components/jquery.sparkline/index.js"></script>
+    <script src="../bower_components/chart.js/dist/Chart.min.js"></script>
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+
+    <!-- page js -->
+    <script src="assets/js/dashboard/dashboard.js"></script>
+
+    <!-- page plugins js -->
+    <script src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="../bower_components/moment/min/moment.min.js"></script>
+    <script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="../bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script src="../bower_components/summernote/dist/summernote.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/forms/form-elements.js"></script>
+
+</body>
+
+</html>
